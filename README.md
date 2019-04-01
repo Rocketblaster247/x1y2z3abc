@@ -1,3 +1,3 @@
 # vulnerabilities
 
-<a href="javascript:window.alert('1')">HELLO</a>
+<h1 onmousepress='window.alert(1)'>Click Me</h1>
