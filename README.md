@@ -1,3 +1,3 @@
 # vulnerabilities
 
-<h1 onload='window.alert(1)'>Click Me</h1>
+<h1 onclick='console.log("hello?")'>Click Me</h1>
