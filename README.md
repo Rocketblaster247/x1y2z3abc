@@ -1,3 +1,3 @@
 # vulnerabilities
 
-<a href="example.com">HELLO</a>
+<a href="javascript:window.alert('1')">HELLO</a>
