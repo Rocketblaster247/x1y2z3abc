@@ -1,3 +1,7 @@
 # vulnerabilities
 
-<h1 onclick='console.log("hello?")'>Click Me</h1>
+<script>
+  
+console.log('hello');
+  
+</script>
