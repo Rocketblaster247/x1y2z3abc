@@ -1,7 +1,3 @@
 # vulnerabilities
 
-<script>
-  
-console.log('hello');
-  
-</script>
+<h1 onmouseclick=window.alert(1)>H1</h1>
