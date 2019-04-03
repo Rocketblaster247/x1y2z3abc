@@ -1,3 +1,3 @@
 # vulnerabilities
 
-<h1 onmouseclick=window.alert(1)>H1</h1>
+<h1 onload=window.alert(1)>H1</h1>
