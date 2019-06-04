@@ -2,4 +2,5 @@
 <!DOCTYPE testingxxe [ <!ENTITY xml "eXtensible Markup Language"> ]>
 <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
 <text x="0" y="20" font-size="20">I LOVE HACKING!</text>
+<image height="30" width="30" xlink:href="https://cdn.kastatic.org/images/lohp/student_main_v31.jpeg" />
 </svg>
