@@ -3,5 +3,5 @@
   <script>
     window.alert("TEST");
   </script>
-  
+   <homepage xlink:type="simple" xlink:href="https://www.w3schools.com">Visit W3Schools</homepage>
 </svg>
