@@ -1,1 +1,1 @@
-<IMG src='github.com/@vbscript:msgbox("XSS")'>
+<IMG src='github.com/logout'>
