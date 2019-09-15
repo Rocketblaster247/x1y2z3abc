@@ -1,1 +1,1 @@
-<IMG src='github.com/signout'>
+<IMG src='http://github.com/signout'>
