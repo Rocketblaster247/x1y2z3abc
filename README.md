@@ -1,1 +1,1 @@
-![Uh oh...]("onerror="alert('XSS')
+[example.com]()
