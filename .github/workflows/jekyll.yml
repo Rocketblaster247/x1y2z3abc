@@ -3,12 +3,23 @@ name: Jekyll site CI
 on: [push]
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
+  test:
+    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: ['8', '10', '12']
+        os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
     - uses: actions/checkout@v1
-    - name: Build the site in the jekyll/builder container
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node_version }}
+
+    - name: npm install, build and test
       run: |
-        ping 10000
+        npm install
+        npm run build --if-present
+        npm test
