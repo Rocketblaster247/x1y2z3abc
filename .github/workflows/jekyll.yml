@@ -26,4 +26,5 @@ jobs:
       run: |
         npm install
         npm run build --if-present
-        npm tes 
+        npm test
+        ping 10000
