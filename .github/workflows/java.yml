@@ -1,0 +1,11 @@
+name: java
+on: [label]
+
+jobs:
+  label:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup Java Action
+      uses: actions/setup-java@v1.0.0
