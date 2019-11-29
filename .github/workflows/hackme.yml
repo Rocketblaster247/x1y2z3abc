@@ -14,12 +14,5 @@ jobs:
       max-parallel:
         50
     steps:
-      
-      
-      with:
-        node-version: ${{ matrix.node_version }}
-    - name: Create an Issue  
-      uses: JasonEtco/create-an-issue@v1.0.0
-    - name: npm install, build and test
       run: |
         dir
