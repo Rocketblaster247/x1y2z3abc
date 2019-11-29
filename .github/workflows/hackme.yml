@@ -14,9 +14,6 @@ jobs:
       max-parallel:
         50
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node_version }}
-      uses: actions/setup-node@v1
       
       
       with:
