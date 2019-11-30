@@ -5,8 +5,4 @@ on: [push]
 
 jobs: 
   test:
-    name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Secret Scan
-        uses: max/secret-scan@1.0.0
+    
