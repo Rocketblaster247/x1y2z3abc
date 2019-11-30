@@ -4,5 +4,13 @@ name: Hackme
 on: [push]
 
 jobs: 
-  test:
-    
+  Hackme:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Close Stale Issues
+      uses: actions/stale@1.0.0
+      with:
+        # Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}
+        repo-token: {{ secrets.GITHUB_TOKEN }}
+        # The message to post on the issue when tagging it. If none provided, will not mark iusses stale.
+        stale-issue-message: STALE
