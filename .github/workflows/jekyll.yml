@@ -6,25 +6,7 @@ jobs:
   test:
     name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        node_version: ['8', '10', '12'] 
-        os: [ubuntu-latest, windows-latest, macOS-latest]
-      max-parallel:
-        50
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node_version }}
-      uses: actions/setup-node@v1
-      
-      
-      with:
-        node-version: ${{ matrix.node_version }}
-    - name: Create an Issue  
-      uses: JasonEtco/create-an-issue@v1.0.0
-    - name: npm install, build and test
-      run: |
-        npm install
-        npm run build --if-present
-        npm test
-        ping 10000
+      - name: npm install, build and test
+        run: |
+          echo "RCE"
